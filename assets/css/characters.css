@@ -1,0 +1,46 @@
+html {
+    background-image: linear-gradient(to bottom, rgb(35, 32, 32), rgb(102, 95, 95) 85%, rgb(173, 167, 167), rgb(178, 176, 176));
+	background-repeat: no-repeat;
+}
+
+h1 {
+	color: #b5b5b5;
+    font-size: 600%;
+	text-align: center;
+}
+
+.biorhyme-destiny-2 {
+  font-family: "BioRhyme", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+nav {
+	display: flex;
+	gap: 9px;
+	padding: 0%;
+	width: 150px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin: 8px auto 50px auto;
+	
+    
+}
+
+nav a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	display: flex;
+	color:  rgb(255, 142, 20);
+	text-decoration: none;
+	padding: 10px 20px;
+	border: solid #00d0ff;
+	border-radius: 10%;
+}
+
+nav a:hover {
+	background-color: rgb(153, 50, 243);
+}
