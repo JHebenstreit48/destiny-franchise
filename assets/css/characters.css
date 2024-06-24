@@ -3,6 +3,11 @@ html {
 	background-repeat: no-repeat;
 }
 
+body {
+	min-height: 100vh;
+	box-sizing: border-box;
+}
+
 h1 {
 	color: #b5b5b5;
     font-size: 600%;
@@ -43,4 +48,27 @@ nav a {
 
 nav a:hover {
 	background-color: rgb(153, 50, 243);
+}
+
+.characters {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	border: blue solid 2px;
+	padding: 4%;
+	box-sizing: border-box;
+	border-radius: 8%;
+	color: pink;
+	max-width: 100%;
+	width: 53%;
+	margin: 0 auto 0 auto;
+}
+
+.character-heading {
+	text-decoration: none;
+	text-align: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
 }
