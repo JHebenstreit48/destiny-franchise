@@ -7,31 +7,23 @@ const ghostDescrip = document.querySelector('#ghost-desc')
 
 const container = document.querySelector('.container');
 
-let isFlipped = false
 
 container.addEventListener('click', function (event) {
     const element = event.target
-    
+    console.log(element);
 
+    if (element.matches('.character-box'))  {
 
-    if (element.matches('.character-box')) {
-        if (isFlipped === false) {
-            // const state = element.getAttribute('data-state')
-            yourGhost.style.display = 'none'
-            ghostDescrip.style.display = 'block'
-        isFlipped === true
+        let isFlipped =  element.getAttribute('data-flipped');
+        isFlipped = JSON.parse(isFlipped);
 
+        if (!isFlipped) {
+            element.textContent = element.getAttribute('data-back')
+            element.setAttribute('data-flipped', 'true')
+
+        } else {
+            element.textContent = element.getAttribute('data-front')
+            element.setAttribute('data-flipped', 'false')
         }
-
-        else {
-            yourGhost.style.display = 'block'
-            ghostDescrip.style.display = 'none'
-        isFlipped === false
         }
-        
-
-        // if (state === 'hidden') {
-        //     element.textContent = element.dataset.
-        // }
-    }
 })
