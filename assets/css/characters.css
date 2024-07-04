@@ -50,22 +50,35 @@ nav a:hover {
 }
 
 .container {
-	width: 80vw;
-  	margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  margin: 24px auto 25px auto;
+  max-width: calc(100%-48);
 }
 
 .character-box {
-  display: block;
-  float: left;
-  width: 31%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: calc(100%-48);
+  max-height: 100%;
+  width: 30%;
   height: 200px;
-  margin: 1%;
+  margin:10px;
   cursor: pointer;
-  object-fit: cover;
   border-radius: 8px;
   background-color: #093145;
   text-align: center;
-  line-height: 200px;
-  font-size: 15px;
+  line-height: 1.5;
+  font-size: 20px;
   color: whitesmoke;
+  font-style: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 3px 2px black;
+}
+
+.data-back {
+  font-size: 13px;
 }
