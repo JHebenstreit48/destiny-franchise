@@ -1,17 +1,17 @@
 html {
-    background-image: linear-gradient(to bottom, rgb(35, 32, 32), rgb(102, 95, 95) 85%);
-	background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, rgb(35, 32, 32), rgb(102, 95, 95) 85%);
+  background-repeat: no-repeat;
 }
 
 body {
-	min-height: 100vh;
-	box-sizing: border-box;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 h1 {
-	color: #b5b5b5;
-    font-size: 600%;
-	text-align: center;
+  color: #b5b5b5;
+  font-size: 600%;
+  text-align: center;
 }
 
 .biorhyme-destiny-2 {
@@ -24,35 +24,35 @@ h1 {
 }
 
 nav {
-	display: flex;
-	gap: 9px;
-	padding: 0%;
-	width: 150px;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	margin: 8px auto 50px auto;
-    
+  display: flex;
+  gap: 9px;
+  padding: 0%;
+  width: 150px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 8px auto 50px auto;
+
 }
 
 nav a {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	display: flex;
-	color:  rgb(255, 142, 20);
-	text-decoration: none;
-	padding: 10px 20px;
-	border: solid #00d0ff;
-	border-radius: 10%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  color: rgb(255, 142, 20);
+  text-decoration: none;
+  padding: 10px 20px;
+  border: solid #00d0ff;
+  border-radius: 10%;
 }
 
 nav a:hover {
-	background-color: rgb(153, 50, 243);
+  background-color: rgb(153, 50, 243);
 }
 
 .container {
   display: flex;
   justify-content: center;
-  align-items: center ;
+  align-items: center;
   margin: 24px auto 25px auto;
   max-width: calc(100%-48);
 }
@@ -61,24 +61,39 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-flow: row wrap;
   max-width: calc(100%-48);
-  max-height: 100%;
-  width: 30%;
-  height: 200px;
-  margin:10px;
+  max-height: calc(100%-49);
+  width: 350px;
+  height: 230px;
+  margin: 10px;
   cursor: pointer;
-  border-radius: 8px;
-  background-color: #093145;
+  border-radius: 15px;
+  background-color: #0715d3;
   text-align: center;
   line-height: 1.5;
   font-size: 20px;
   color: whitesmoke;
   font-style: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-shadow: 3px 2px black;
+  text-shadow: 3px 3px black;
+  box-shadow: 6px 6px 6px rgb(4, 180, 42);
 }
 
-.data-back {
-  font-size: 13px;
+[data-flipped="true"] {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  padding: 9px 96px 10px 50px;
+  min-width: calc(100%-49);
+  max-width: 100%;
+  width: 65%;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-back="true"] {
+  padding: 5px 5px 8px 9px;
+  display: flex;
+  flex-flow: row wrap;
 }

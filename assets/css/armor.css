@@ -48,3 +48,20 @@ nav a {
 nav a:hover {
 	background-color: rgb(153, 50, 243);
 }
+
+p {
+	color: white;
+	text-align: center;
+}
+
+ul {
+	margin-top: 50px;
+}
+
+ul li {
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	margin-top: 35px;
+}
