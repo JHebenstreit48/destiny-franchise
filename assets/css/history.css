@@ -30,9 +30,7 @@ nav {
 	text-align: center;
 	align-items: center;
 	justify-content: center;
-	margin: 8px auto 50px auto;
-	
-    
+	margin: 8px auto 50px auto;  
 }
 
 nav a {
@@ -41,8 +39,11 @@ nav a {
 	color:  rgb(255, 142, 20);
 	text-decoration: none;
 	padding: 10px 20px;
-	border: solid #00d0ff;
+	border: 1px solid #00d0ff;
 	border-radius: 10%;
+	background-image: linear-gradient(to bottom, rgb(35, 32, 32), rgb(102, 95, 95) 85%);
+	background-repeat: no-repeat;
+	box-shadow: 1px 2px 12px #00d0ff;
 }
 
 nav a:hover {
